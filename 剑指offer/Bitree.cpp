@@ -8,6 +8,7 @@
  * };
  */  //二叉树定义
 
+class Solution
 {
 public:
 	TreeNode*construct_tree(vector<int>preorder,int pre_start,int pre_end,
