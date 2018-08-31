@@ -18,9 +18,9 @@ public:
     	{
     		if(!(pRoot->left==nullptr&&pRoot->right==nullptr))//两个子节点不全为空
     		{
-		    	newnode = pRoot;
-		    	pRoot->left = pRoot->right;
+		    	newnode = pRoot->right;
 		    	pRoot->right = pRoot->left;
+		    	pRoot->left = newnode;
 		    }
 	    }
     	Mirror(pRoot->left);
