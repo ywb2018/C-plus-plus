@@ -9,8 +9,8 @@ public:
     	int length = matrix.size();
     	if( length %2 ==0)//偶数
     	{
-    		int x = length/2-1;
-    		int y = length/2-2;
+    		int x = length/2;
+    		int y = length/2-1;
     		out.push_back(matrix[x][y]);//先加中心点
     		for(int i=1;i<=length-1;i=i+2)
     		{
@@ -18,14 +18,19 @@ public:
     				break;
     			int flag1 =i;
     			while(flag1) //右
-    			{	y++;
+    			{	
+    				if( x==0&& y==0)//如果到头
+    				y++;
     				out.push_back(matrix[x][y]);
     				flag1--;
     			}
 
     			int flag2 =i;
     			while(flag2) //上
-    			{	x--;
+    			{	
+    				if( x==0&& y==0)//如果到头
+    					break;
+    				x--;
     				out.push_back(matrix[x][y]);
     				flag2--;
     			}
@@ -41,7 +46,7 @@ public:
     			}
 
     			int flag4 = i+1;
-    			while(flag3) //下
+    			while(flag4) //下
     			{	
     				if( x==0&& y==0)//如果到头
     					break;
@@ -53,12 +58,12 @@ public:
     	}
     	if(length%2 == 1)//奇数
     	{
-    		int x = length/2-1;
-    		int y = length/2-1;
+    		int x = (length-1)/2;
+    		int y = (length-1)/2;
     		out.push_back(matrix[x][y]);//先加中心点
     		for(int i=1;i<=length-1;i=i+2)
     		{
-    			int flag3 = i+1;
+    			int flag3 = i;
     			while(flag3) //左
     			{	
     				if( x==0&& y==0)//如果到头
@@ -68,7 +73,7 @@ public:
     				flag3--;
     			}
 
-    			int flag4 = i+1;
+    			int flag4 = i;
     			while(flag3) //下
     			{	
     				if( x==0&& y==0)//如果到头
@@ -80,25 +85,29 @@ public:
 
     			if(x==0&& y==0)
     				break;
-    			int flag1 =i;
+    			int flag1 =i+1;
     			while(flag1) //右
-    			{	y++;
+    			{	
+    				if( x==0&& y==0)//如果到头
+    					break;
+    				y++;
     				out.push_back(matrix[x][y]);
     				flag1--;
     			}
 
-    			int flag2 =i;
+    			int flag2 =i+1;
     			while(flag2) //上
-    			{	x--;
+    			{	
+    				if( x==0&& y==0)//如果到头
+    					break;
+    				x--;
     				out.push_back(matrix[x][y]);
     				flag2--;
     			}
-
-    			
     		}
     	}
     	vector<int>out2;
-    	out2.assign(out.rbegin(),rend());
+    	out2.assign(out.rbegin(),out.rend());
     	return out2;
     }
 };
