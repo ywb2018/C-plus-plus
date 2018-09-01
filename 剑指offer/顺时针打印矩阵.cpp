@@ -20,6 +20,7 @@ public:
     			while(flag1) //右
     			{	
     				if( x==0&& y==0)//如果到头
+    					break;
     				y++;
     				out.push_back(matrix[x][y]);
     				flag1--;
