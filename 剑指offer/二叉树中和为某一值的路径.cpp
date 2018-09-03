@@ -9,31 +9,60 @@ struct TreeNode {
 			val(x), left(NULL), right(NULL) {
 	}
 };*/
-
-class Solution 
-{
-    vector<vector<int> >allRes;
-    vector<int> tmp;
-    void dfsFind(TreeNode * node , int number)
-    {
-        tmp.push_back(node->val);
-        if(number-node->val == 0 && !node->left && !node->right)
-            allRes.push_back(tmp);
-        else 
-        {
-            if(node->left) 
-            	dfsFind(node->left, number-node->val);
-
-            if(node->right) 
-            	dfsFind(node->right, number-node->val);
-        }
-        tmp.pop_back(); 
-    }
+class Solution {
 public:
     vector<vector<int> > FindPath(TreeNode* root,int expectNumber) 
     {
-        if(root) 
-        	dfsFind(root, expectNumber);
-        return allRes;
+    	int i=0
+    	vector<vector<int>> a;
+    	queue<TreeNode*> line;
+    	
+
+    	if(expectNumber-root->val ==0)
+    		if(!(root->left==nullptr && root-<right==nullptr))//如果已经找完但是还有叶子节点，则错误
+    			line.push(nullptr);
+
+    	if(expectNumber-root->val >0)
+    		if(root->left == nullptr && root->right == nullptr)//如果找到叶子节点，但是还没凑齐，则错误
+    			line.push(nullptr);
+
+    	
+    	if(expectNumber-root->val ==0)
+    		if(root->left==nullptr && root-<right==nullptr)//如果已经找完且没叶子节点
+    		{
+    			while(!a.empty())//
+    			{
+    				a[i].push_back(line.front()->val);
+    				line.pop()
+    			}
+    			i++;
+    		}
+
+    	if(root->left != nullptr)
+    	{
+    		if(line.back() != nullptr)
+    		{
+    			FindPath(root->left,expectNumber-root->val);
+    			line.push(root);//满足条件就入队
+    		}
+    	}
+
+    	if(root->right != nullptr)
+    	{
+    		if(line.back() != nullptr)
+    		{
+    			FindPath(root->right,expectNumber-root->val);
+    			line.push(root);//满足条件就入队
+    		}
+    		else// 如果有nullptr
+    		{
+	    		line.pop();
+	    		line.pop();
+    		}
+    	}
+
+
+
+    	return a;
     }
 };
