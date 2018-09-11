@@ -4,6 +4,7 @@ class Solution {
 public:
     vector<int> FindNumbersWithSum(vector<int> array,int sum) 
     {
-        
+        if(array.size()<2)//长度不够
+        	return 0;
     }
 };
