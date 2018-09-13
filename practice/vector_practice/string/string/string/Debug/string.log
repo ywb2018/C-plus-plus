@@ -1,18 +1,18 @@
-﻿生成启动时间为 2018/9/12 星期三 下午 8:16:45。
+﻿生成启动时间为 2018/9/13 星期四 下午 5:43:39。
      1>项目“E:\github\C-plus-plus\practice\vector_practice\string\string\string\string.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt string.cpp tt.cpp
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt string.cpp test.cpp tt.cpp
          tt.cpp
-     1>e:\github\c-plus-plus\practice\vector_practice\string\string\string\tt.cpp(30): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\github\c-plus-plus\practice\vector_practice\string\string\string\tt.cpp(38): warning C4018: “<”: 有符号/无符号不匹配
+         test.cpp
          string.cpp
          正在生成代码...
        Link:
          D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\C-plus-plus\practice\vector_practice\string\string\Debug\string.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\C-plus-plus\practice\vector_practice\string\string\Debug\string.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\C-plus-plus\practice\vector_practice\string\string\Debug\string.lib" /MACHINE:X86 Debug\string.obj
+         Debug\test.obj
          Debug\tt.obj
          string.vcxproj -> E:\github\C-plus-plus\practice\vector_practice\string\string\Debug\string.exe
      1>已完成生成项目“E:\github\C-plus-plus\practice\vector_practice\string\string\string\string.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.00
+已用时间 00:00:02.23

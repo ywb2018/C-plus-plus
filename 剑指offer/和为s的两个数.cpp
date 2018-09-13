@@ -4,7 +4,20 @@ class Solution {
 public:
     vector<int> FindNumbersWithSum(vector<int> array,int sum) 
     {
-        if(array.size()<2)//长度不够
-        	return 0;
+    	vector<int>result;
+    	int len = array.size();
+        if(len < 2)//长度不够
+        	return result;
+        
+        int low=0,high=len-1,mult=0;
+        while(low<high)
+        {
+        	int add = array[low]+array[high];
+        	if(add==sum)//
+        	{
+        		if(array[low]*array[high]<)
+        	}
+        }
+        return result;
     }
 };
