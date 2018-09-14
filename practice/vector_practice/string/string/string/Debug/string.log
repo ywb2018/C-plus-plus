@@ -1,4 +1,4 @@
-﻿生成启动时间为 2018/9/13 星期四 下午 5:43:39。
+﻿生成启动时间为 2018/9/14 星期五 下午 3:03:29。
      1>项目“E:\github\C-plus-plus\practice\vector_practice\string\string\string\string.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
          D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt string.cpp test.cpp tt.cpp
@@ -15,4 +15,4 @@
 
 生成成功。
 
-已用时间 00:00:02.23
+已用时间 00:00:01.93

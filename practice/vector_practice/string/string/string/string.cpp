@@ -41,8 +41,11 @@ int main()
 {
 	int b[] = { 1, 2, 4, 7, 11, 15 },sum=15;
 	vector<int>a(b,b+6);
-	vector<int>test = FindNumbersWithSum(a, sum);
-	
+	//vector<int>test = FindNumbersWithSum(a, sum);
+	string str = "";
+	str += 'a';
+	str += 'b';
+	cout <<str << endl;
 	system("pause");
 	return 0;
 }
